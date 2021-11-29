@@ -1,0 +1,61 @@
+Script started on 2021-10-24 23:35:17-07:00 [TERM="screen" TTY="/dev/pts/3" COLUMNS="119" LINES="56"]
+major-arcana@the-heirophant:~/Desktop/EE-333/Lab 2$ exitresetman tmux | grep bind-keyreset[K[1Pexit[Kls
+Lab-2-script.txt  makefile
+major-arcana@the-heirophant:~/Desktop/EE-333/Lab 2$ make s[Kcheck
+avrdude -c usbtiny -p atmega328p
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading |                                                    | 0% 0.00sReading | #################                                  | 33% 0.00sReading | #################################                  | 66% 0.00sReading | ################################################## | 100% 0.00s
+
+avrdude: Device signature = 0x1e950f (probably m328p)
+
+avrdude: safemode: Fuses OK (E:FD, H:DE, L:FF)
+
+avrdude done.  Thank you.
+
+major-arcana@the-heirophant:~/Desktop/EE-333/Lab 2$ make check
+avrdude -c usbtiny -p atmega328p
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading |                                                    | 0% 0.00sReading | #################                                  | 33% 0.00sReading | #################################                  | 66% 0.00sReading | ################################################## | 100% 0.00s
+
+avrdude: Device signature = 0x1e950f (probably m328p)
+
+avrdude: safemode: Fuses OK (E:FD, H:DE, L:FF)
+
+avrdude done.  Thank you.
+
+major-arcana@the-heirophant:~/Desktop/EE-333/Lab 2$ make check
+avrdude -c usbtiny -p atmega328p
+
+avrdude: initialization failed, rc=-1
+         Double check connections and try again, or use -F to override
+         this check.
+
+
+avrdude done.  Thank you.
+
+make: *** [makefile:3: check] Error 1
+major-arcana@the-heirophant:~/Desktop/EE-333/Lab 2$ make check
+avrdude -c usbtiny -p atmega328p
+
+avrdude: AVR device initialized and ready to accept instructions
+
+Reading |                                                    | 0% 0.00sReading | #################                                  | 33% 0.00sReading | #################################                  | 66% 0.00sReading | ################################################## | 100% 0.00s
+
+avrdude: Device signature = 0x1e950f (probably m328p)
+
+avrdude: safemode: Fuses OK (E:FD, H:DA, L:FF)
+
+avrdude done.  Thank you.
+
+major-arcana@the-heirophant:~/Desktop/EE-333/Lab 2$ f[Kr[Kexit[K[K[K[Kls
+Lab-2-script.txt  makefile  serial-println-ascii-dump
+major-arcana@the-heirophant:~/Desktop/EE-333/Lab 2$ vat[K[K[Kc[Kvim serial-println-ascii-dump 
+[?1049h[?1h=[1;56r[23m[24m[0m[37m[1m[H[J[?25l[56;1H"serial-println-ascii-dump" 0L, 0C[1;1H[1m[33m1   [0m[37m[1m
+[1m[34m~                                                                                                                      [3;1H~                                                                                                                      [4;1H~                                                                                                                      [5;1H~                                                                                                                      [6;1H~                                                                                                                      [7;1H~                                                                                                                      [8;1H~                                                                                                                      [9;1H~                                                                                                                      [10;1H~                                                                                                                      [11;1H~                                                                                                                      [12;1H~                                                                                                                      [13;1H~                                                                                                                      [14;1H~                                                                                                                      [15;1H~                                                                                                                      [16;1H~                                                                                                                      [17;1H~                                                                                                                      [18;1H~                                                                                                                      [19;1H~                                                                                                                      [20;1H~                                                                                                                      [21;1H~                                                                                                                      [22;1H~                                                                                                                      [23;1H~                                                                                                                      [24;1H~                                                                                                                      [25;1H~                                                                                                                      [26;1H~                                                                                                                      [27;1H~                                                                                                                      [28;1H~                                                                                                                      [29;1H~                                                                                                                      [30;1H~                                                                                                                      [31;1H~                                                                                                                      [32;1H~                                                                                                                      [33;1H~                                                                                                                      [34;1H~                                                                                                                      [35;1H~                                                                                                                      [36;1H~                                                                                                                      [37;1H~                                                                                                                      [38;1H~                                                                                                                      [39;1H~                                                                                                                      [40;1H~                                                                                                                      [41;1H~                                                                                                                      [42;1H~                                                                                                                      [43;1H~                                                                                                                      [44;1H~                                                                                                                      [45;1H~                                                                                                                      [46;1H~                                                                                                                      [47;1H~                                                                                                                      [48;1H~                                                                                                                      [49;1H~                                                                                                                      [50;1H~                                                                                                                      [51;1H~                                                                                                                      [52;1H~                                                                                                                      [53;1H~                                                                                                                      [54;1H~                                                                                                                      [55;1H~                                                                                                                      [0m[37m[1m[56;102H0,0-1[9CAll[1;5H[34h[?25h[?25l[56;1H[K[56;1H:[34h[?25hq[?25l[56;2H[K[56;2H[34h[?25h:[?25l[56;2H[K[56;2H[34h[?25hq1[?25l[56;3H[K[56;3H[34h[?25h[?25l[56;2H[K[56;2H[34h[?25h1[?25l[56;2H[K[56;2H[34h[?25h1[?25l[56;2H[K[56;2H[34h[?25hq![?25l[56;1H[K[56;1H[?1l>[34h[?25h[?1049lmajor-arcana@the-heirophant:~/Desktop/EE-333/Lab 2$ exit
+exit
+
+Script done on 2021-10-25 02:21:55-07:00 [COMMAND_EXIT_CODE="0"]
