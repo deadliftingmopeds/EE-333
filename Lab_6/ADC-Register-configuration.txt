@@ -1,0 +1,60 @@
+
+
+ADMUX - ADC MUX Selection Register
+	
+  [REFS1][REFS0][ADLAR][ - ]_[MUX3][MUX2][MUX1][MUX0]
+  [  0  ][  1  ][  0  ][ 0 ]_[  0 ][  0 ][  0 ][  0 ]
+ 
+  [REFS1][REFS0] - Refrence Selection Bit
+  [  0  ][  1  ] - AVCC
+  [  1  ][  1  ] - Internal 1.1V refrence
+
+  [ADLAR] - ADC Left adjust Result 
+  [  0  ] - Right adjust 
+  [  1  ] - Left adjust
+
+  [MUX3][MUX2][MUX1][MUX0] - Analog Channel Selection Bit
+  [  0 ][  0 ][  0 ][  0 ] - ADC0
+  [  0 ][  0 ][  0 ][  1 ] - ADC1
+   ...
+  [  1 ][  1 ][  1 ][  0 ] - 1.1V (V_bg) 
+  [  1 ][  1 ][  1 ][  1 ] - 0V (GND) 
+
+
+ADCSRA - ADC Control and Status Register A
+	
+  [ADEN][ADSC][ADATE][ADIF]_[ADIE][ADPS2][ADPS1][ADPS0]
+
+  [ADEN] -ADC Enable
+  [  0 ] - ADC off 
+  [  1 ] - ADC on
+
+  [ADSC] - ADC Start Conversion
+  - Single Conversion mode
+  [  0 ] - can't write 0 only returns 0 when conversion is complete
+  [  1 ] - Starts conversion
+  - Free Running Mode
+  [  0 ] - can't write 0 only returns 0 when conversion is complete
+  [  1 ] - Starts first conversion 
+
+  [ADATE] - ADC Auto Trigger Enable
+  [  0  ] - Auto trigger off
+  [  1  ] - ADC start on positive edge of ADTS in ADCSRB trigger source 
+
+  [ADIE] - ADC Interrupt Enable
+  [  0 ] - ADC interrupts off 
+  [  1 ] - With SREG I-bit enabled (global interrupts) activates ADC interrupts
+
+  []
+
+
+
+
+
+ADCSRB - ADC Control and Status Register B
+
+	[ ][ ][ ][ ]_[ ][ ][ ][ ][ ]
+
+
+
+
